@@ -175,15 +175,6 @@ func DeleteItem(db *gorm.DB) func(c *gin.Context) {
 }
 func ListItem(db *gorm.DB) func(c *gin.Context) {
 	return func(c *gin.Context) {
-		// var data TodoItemCreation
-
-		// if err := c.ShouldBind(&data); err != nil {
-		// 	c.JSON(http.StatusBadRequest, gin.H{
-		// 		"error": err.Error(),
-		// 	})
-
-		// 	return
-		// }
 
 		var result []TodoItem
 
